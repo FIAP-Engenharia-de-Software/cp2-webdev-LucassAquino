@@ -5,7 +5,11 @@
 // Crie a função corrigirValor, que recebe um valor e tenta convertê-lo para número. Se não for possível, retorne `"Valor inválido"`.
 
 function corrigirValor(valor) {
-  // TODO: implementar função
+  let parsed = parseInt(valor)
+  if(typeof(parsed) != "number" || isNaN(parsed))
+    return "Valor inválido"
+  else
+    return parsed
 }
 
 //NÃO REMOVA O CÓDIGO ABAIXO
